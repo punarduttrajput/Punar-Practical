@@ -6,7 +6,7 @@ import { Observable, tap } from 'rxjs';
   providedIn: 'root'
 })
 export class ObservationService {
-  private apiUrl = 'https://localhost:7039/api/Data'; 
+  private apiUrl = 'https://localhost:7095/api/Data'; 
 
   constructor(private http: HttpClient) { }
 
