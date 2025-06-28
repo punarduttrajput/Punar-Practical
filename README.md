@@ -14,8 +14,8 @@
 ## 🧑‍💻 Clone the repository
 
 ```bash
-git clone <your-repo-url>
-cd <your-repo-folder>
+git clone https://github.com/punarduttrajput/Punar-Practical.git
+cd Punar-Practical
 ```
 
 ---
