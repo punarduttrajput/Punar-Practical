@@ -1,0 +1,36 @@
+<div style="display: flex; border: 1px solid black;">
+  <!-- Left sampling time list -->
+  <mat-nav-list style="width: 250px; border-right: 1px solid black;">
+    <mat-list-item *ngFor="let data of observation?.datas"
+                   (click)="onSelect(data.samplingTime)"
+                   [class.selected]="selectedData?.samplingTime === data.samplingTime"
+                   style="cursor: pointer;">
+      {{ data.samplingTime | date: 'dd-MM-yyyy hh:mm:ss a' }}
+    </mat-list-item>
+  </mat-nav-list>
+
+  <!-- Right form -->
+  <form [formGroup]="form" style="flex: 1; padding: 20px;" *ngIf="selectedData">
+    <div style="margin-bottom: 15px;">
+      <label>Project Name:</label>
+      <input type="text" formControlName="Project Name" style="width: 200px; margin-left: 10px;" />
+    </div>
+
+    <div style="margin-bottom: 15px;">
+      <label>Construction Count:</label>
+      <input type="number" formControlName="Construction Count" style="width: 80px; margin-left: 10px;" />
+    </div>
+
+    <div style="margin-bottom: 15px;">
+      <label>Is Construction Completed:</label>
+      <input type="checkbox" formControlName="Is Construction Completed" style="margin-left: 10px;" />
+    </div>
+
+    <div style="margin-bottom: 15px;">
+      <label>Length of the road:</label>
+      <input type="number" formControlName="Length of the road" style="width: 80px; margin-left: 10px;" /> KM
+    </div>
+
+    <button type="button" (click)="onSave()" style="padding: 5px 15px; border: 1px solid black; background: white;">Save</button>
+  </form>
+</div>
