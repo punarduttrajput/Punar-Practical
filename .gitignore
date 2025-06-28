@@ -26,3 +26,7 @@
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+/.vs
+/AspAPI/AspAPI/bin/Debug/net8.0
+/AspAPI/AspAPI/obj
+/AspAPI/.vs/AspAPI
