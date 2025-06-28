@@ -1,13 +1,13 @@
 import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { MatTabsModule } from '@angular/material/tabs';
+import { SummaryViewComponent } from './summary-view/summary-view.component';
+import { DetailedViewComponent } from './detailed-view/detailed-view.component';
+import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet],
+  imports: [MatTabsModule, SummaryViewComponent, DetailedViewComponent, CommonModule],
   templateUrl: './app.component.html',
-  styleUrl: './app.component.css'
 })
-export class AppComponent {
-  title = 'AngFrontend';
-}
+export class AppComponent { }
