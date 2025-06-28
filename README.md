@@ -22,7 +22,7 @@ cd Punar-Practical
 
 ## ⚙️ Backend Setup (Web API)
 
-1️⃣ Open the `WebApi` solution file (`.sln`) in Visual Studio.
+1️⃣ Open the `AspApi` solution file (`.sln`) in Visual Studio.
 
 2️⃣ Build the solution.
 
@@ -78,7 +78,7 @@ http://localhost:4200
 
 ```
 root
-├── WebApi
+├── AspApi
 │   └── ... (API code)
 ├── AngFrontend
 │   └── ... (Angular code)
